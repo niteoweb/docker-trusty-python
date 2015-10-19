@@ -8,3 +8,7 @@ run apt-get -y --force-yes install ruby-dev debhelper python3-dev python3-setupt
 run apt-get autoclean
 run apt-get -y --force-yes install python-pip python-setuptools libpython-dev
 run locale-gen en_US.UTF-8
+run add-apt-repository "deb http://repo.aptly.info/ squeeze main" -y
+run apt-key adv --keyserver keys.gnupg.net --recv-keys E083A3782A194991
+run apt-get update
+run apt-get -yq --force-yes install dh-virtualenv goaccess aptly
