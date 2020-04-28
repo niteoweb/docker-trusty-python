@@ -13,3 +13,4 @@ run add-apt-repository "deb http://repo.aptly.info/ squeeze main" -y
 run apt-key adv --keyserver keys.gnupg.net --recv-keys E083A3782A194991
 run apt-get update
 run apt-get -yq --force-yes install dh-virtualenv goaccess aptly
+run curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
